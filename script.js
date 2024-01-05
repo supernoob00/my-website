@@ -27,3 +27,63 @@
   });
   
 })(jQuery);
+
+
+/* populate projects page with project cards */
+
+const projectsContainer = document.querySelector(".projects-container");
+const projects = [
+  {
+    name: "SnakeFX",
+    img: "./img/snake_game.png",
+    link: "https://github.com/supernoob00/SnakeFX/releases/tag/v1.0.0",
+    description: "A video game inspired by the classic game Snake, created using JavaFX. Dodge spinning blades while collecting power-ups to survive as long as possible."
+  },
+  {
+    name: "Crowdify",
+    img: "./img/crowdify.png",
+    link: "https://crowdify.up.railway.app/#/",
+    description: "A website inspired by Kickstarter that allows users to donate to people's campaigns and create their own."
+  },
+  {
+    name: "Word Web",
+    img: "./img/word_web.png",
+    link: "https://wordweb.up.railway.app/",
+    description: "View dynamic, physically-simulated networks of related words using the Moby Thesaurus, the largest thesaurus of the English language."
+  },
+  {
+    name: "Hex",
+    img: "./img/hex.png",
+    link: "https://supernoob00.github.io/HexGame/",
+    description: "Play the the famous game of Hex, popularized by the famous mathematician John Nash, against another player or an AI."
+  }
+];
+
+function projectCard(projectInfo) {
+  const card = document.createElement("div");
+  card.classList.add("project-card");
+
+  const projectName = document.createElement("h3");
+  projectName.textContent = projectInfo.name;
+  card.appendChild(projectName);
+
+  const projectImg = document.createElement("img");
+  projectImg.src = projectInfo.img;
+  card.appendChild(projectImg);
+
+  const projectDesc = document.createElement("p");
+  projectDesc.textContent = projectInfo.description;
+  card.appendChild(projectDesc);
+
+  card.addEventListener('click', (e) => {
+    window.open(projectInfo.link, '_blank');
+  });
+  return card;
+}
+
+for (const project of projects) {
+  const card = projectCard(project);
+  console.log(card);
+  projectsContainer.appendChild(card);
+}
+
