@@ -36,7 +36,7 @@ const projects = [
   {
     name: "SnakeFX",
     img: "./img/snake_game.png",
-    link: "https://github.com/supernoob00/SnakeFX/releases/tag/v1.0.0",
+    link: "https://github.com/supernoob00/SnakeFX",
     description: "A video game inspired by the classic game Snake, created using JavaFX. Dodge spinning blades while collecting power-ups to survive as long as possible."
   },
   {
