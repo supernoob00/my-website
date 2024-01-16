@@ -56,6 +56,12 @@ const projects = [
     img: "./img/hex.png",
     link: "https://supernoob00.github.io/HexGame/",
     description: "Play the the famous game of Hex, popularized by the famous mathematician John Nash, against another player or an AI."
+  },
+  {
+    name: "Super Tic-Tac-Toe",
+    img: "./img/tictactoe.png",
+    link: "https://supernoob00.github.io/tic-tac-toe/",
+    description: "Play Tic-Tac-Toe with another player on up to a 7 x 7 board. Features the ability to undo and redo moves."
   }
 ];
 
