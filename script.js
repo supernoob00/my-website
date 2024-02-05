@@ -34,6 +34,12 @@
 const projectsContainer = document.querySelector(".projects-container");
 const projects = [
   {
+    name: "Minesweeper",
+    img: "./img/minesweeper.png",
+    link: "https://github.com/supernoob00/MinesFX",
+    description: "(Still in progress) The most comprehensive Minesweeper desktop client yet. Features multiple game variants, a board editor, and the ability to upload custom boards online."
+  },
+  {
     name: "SnakeFX",
     img: "./img/snake_game.png",
     link: "https://github.com/supernoob00/SnakeFX",
